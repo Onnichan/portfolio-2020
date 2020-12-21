@@ -1,13 +1,33 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer utilities {
+
+  .content-90{
+    height: 92%;
+  }
+
+  .head-10{
+    height: 8%;
+  }
+
+  .christmas-background{
+    background: url('./images/nieve.gif');
+  }
+
+  .bg-home{
+    /* background: #191D29; */
+    background: white;
+    /* font-family: 'Langar', cursive; */
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  }
+
+  .content-p{
+    font-family: 'Permanent Marker', cursive;
+  }
+
+  .bg-image{
+    background: #1E1842;
+  }
 }
